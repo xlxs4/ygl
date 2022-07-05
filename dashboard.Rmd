@@ -1,0 +1,205 @@
+---
+title: "YGL Gene Localizations"
+author: "Orestis Ousoultzoglou"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+    social: menu
+    source_code: embed
+---
+
+```{r setup, include=FALSE}
+library(arrow)
+library(ggplot2)
+library(stringr)
+library(here)
+library(plotly)
+library(flexdashboard)
+
+ggplot2::theme_set(ggplot2::theme_bw())
+```
+
+HIS4
+=======================================================================
+
+```{r HIS4}
+df <- arrow::read_feather(here::here("tibbles", "HIS4.feather"))
+p <- df %>%
+  ggplot(aes(
+    x = timepoints,
+    y = loc_probabilities,
+    group = names,
+    color = names
+  )) +
+  geom_line() +
+  labs(
+    x = "Observation Timepoints",
+    y = "Localization Probability",
+    color = "Shapes"
+  ) +
+  theme(
+    axis.title = element_text(
+      size = 15,
+      color = "firebrick"
+    ),
+    axis.text = element_text(
+      color = "dodgerblue",
+      size = 12
+    ),
+    legend.title = element_text(
+      size = 15,
+      color = "firebrick",
+      face = "italic"
+    )
+  ) +
+  ggtitle(str_glue("{df$genename} Localization"))
+ggplotly(p)
+```
+
+HUG1
+=======================================================================
+
+```{r HUG1}
+df <- arrow::read_feather(here::here("tibbles", "HUG1.feather"))
+p <- df %>%
+  ggplot(aes(
+    x = timepoints,
+    y = loc_probabilities,
+    group = names,
+    color = names
+  )) +
+  geom_line() +
+  labs(
+    x = "Observation Timepoints",
+    y = "Localization Probability",
+    color = "Shapes"
+  ) +
+  theme(
+    axis.title = element_text(
+      size = 15,
+      color = "firebrick"
+    ),
+    axis.text = element_text(
+      color = "dodgerblue",
+      size = 12
+    ),
+    legend.title = element_text(
+      size = 15,
+      color = "firebrick",
+      face = "italic"
+    )
+  ) +
+  ggtitle(str_glue("{df$genename} Localization"))
+ggplotly(p)
+```
+
+RNR3
+=======================================================================
+
+```{r RNR3}
+df <- arrow::read_feather(here::here("tibbles", "RNR3.feather"))
+p <- df %>%
+  ggplot(aes(
+    x = timepoints,
+    y = loc_probabilities,
+    group = names,
+    color = names
+  )) +
+  geom_line() +
+  labs(
+    x = "Observation Timepoints",
+    y = "Localization Probability",
+    color = "Shapes"
+  ) +
+  theme(
+    axis.title = element_text(
+      size = 15,
+      color = "firebrick"
+    ),
+    axis.text = element_text(
+      color = "dodgerblue",
+      size = 12
+    ),
+    legend.title = element_text(
+      size = 15,
+      color = "firebrick",
+      face = "italic"
+    )
+  ) +
+  ggtitle(str_glue("{df$genename} Localization"))
+ggplotly(p)
+```
+
+RNR4
+=======================================================================
+
+```{r RNR4}
+df <- arrow::read_feather(here::here("tibbles", "RNR4.feather"))
+p <- df %>%
+  ggplot(aes(
+    x = timepoints,
+    y = loc_probabilities,
+    group = names,
+    color = names
+  )) +
+  geom_line() +
+  labs(
+    x = "Observation Timepoints",
+    y = "Localization Probability",
+    color = "Shapes"
+  ) +
+  theme(
+    axis.title = element_text(
+      size = 15,
+      color = "firebrick"
+    ),
+    axis.text = element_text(
+      color = "dodgerblue",
+      size = 12
+    ),
+    legend.title = element_text(
+      size = 15,
+      color = "firebrick",
+      face = "italic"
+    )
+  ) +
+  ggtitle(str_glue("{df$genename} Localization"))
+ggplotly(p)
+```
+
+RPL8A
+=======================================================================
+
+```{r RPL8A}
+df <- arrow::read_feather(here::here("tibbles", "RPL8A.feather"))
+p <- df %>%
+  ggplot(aes(
+    x = timepoints,
+    y = loc_probabilities,
+    group = names,
+    color = names
+  )) +
+  geom_line() +
+  labs(
+    x = "Observation Timepoints",
+    y = "Localization Probability",
+    color = "Shapes"
+  ) +
+  theme(
+    axis.title = element_text(
+      size = 15,
+      color = "firebrick"
+    ),
+    axis.text = element_text(
+      color = "dodgerblue",
+      size = 12
+    ),
+    legend.title = element_text(
+      size = 15,
+      color = "firebrick",
+      face = "italic"
+    )
+  ) +
+  ggtitle(str_glue("{df$genename} Localization"))
+ggplotly(p)
+```
