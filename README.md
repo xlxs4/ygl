@@ -2,7 +2,7 @@
 
 ## Description
 
-This script extracts and plots subcellular localization analysis data from [\[1\]](https://www.pnas.org/content/110/39/15842).
+This script extracts and plots subcellular localization analysis data from [here](https://www.pnas.org/content/110/39/15842)[^1].
 The data are retreived from this [server](http://128.179.34.6/twiki/bin/view/CellImaging/WebHome). There is also a [README](http://128.179.34.6/MMS_screen/datafiles/README.txt) explaining the various parameters found in the `.m` data. The plots are in interactive form and can be found [here](https://acubesat.gitlab.io/su/biology/yeast-biology-pages/dashboard.html).
 
 ## Data
@@ -20,4 +20,4 @@ Because the boundaries between these shapes can be funny, the probabilistic clas
 
 ---
 
-[1] Dénervaud, N., Becker, J., Delgado-Gonzalo, R., Damay, P., Rajkumar, A. S., Unser, M., ... & Maerkl, S. J. (2013). A chemostat array enables the spatio-temporal analysis of the yeast proteome. Proceedings of the National Academy of Sciences, 110(39), 15842-15847.
+[^1]: Dénervaud, N., Becker, J., Delgado-Gonzalo, R., Damay, P., Rajkumar, A. S., Unser, M., ... & Maerkl, S. J. (2013). A chemostat array enables the spatio-temporal analysis of the yeast proteome. Proceedings of the National Academy of Sciences, 110(39), 15842-15847.
