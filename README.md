@@ -5,6 +5,8 @@
 This script extracts and plots subcellular localization analysis data from [here](https://www.pnas.org/content/110/39/15842)[^1].
 The data are retreived from this [server](http://128.179.34.6/twiki/bin/view/CellImaging/WebHome). There is also a [README](http://128.179.34.6/MMS_screen/datafiles/README.txt) explaining the various parameters found in the `.m` data. The plots are in interactive form and can be found [here](https://acubesat.gitlab.io/su/biology/yeast-biology-pages/dashboard.html).
 
+![Home page](assets/home-page.png)
+
 ## Data
 
 For each strain, a single-cell rectangular image was captured across a total of 40 timepoints. To distinguish between very fine localization patterns as usually defined in cell biology and more objective geometrical shapes, the authors analyzed the images using a custom-made propbabilistic classification scheme. Six different shapes/patterns were defined:
